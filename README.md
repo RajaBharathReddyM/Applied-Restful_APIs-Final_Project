@@ -1,1 +1,3 @@
 # Applied-Restful_APIs-Final_Project
+
+The Task Manager App is a web-based application that helps users create, edit, delete, and track tasks efficiently. It features three pages: Home (/) to view all tasks, Add Task (/add) to create new tasks, and Edit Task (/edit/:id) to update existing tasks. The backend provides five API endpoints: GET /api/tasks (fetch all tasks), GET /api/tasks/:id (fetch a specific task), POST /api/tasks (create a task), PUT /api/tasks/:id (update a task), and DELETE /api/tasks/:id (delete a task), using Node.js, Express, and MongoDB. The frontend, built with React.js, includes categories, priorities, due dates, task completion tracking, and a responsive UI with dark mode support.
