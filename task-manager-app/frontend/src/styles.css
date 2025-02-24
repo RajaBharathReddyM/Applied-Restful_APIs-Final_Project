@@ -1,0 +1,197 @@
+/* 🌟 General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* 🌟 Centered Container */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* 🌟 Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav button {
+    background: #0056b3;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+nav button:hover {
+    background: #004494;
+}
+
+/* 🌟 Task Form */
+.task-form-container {
+    max-width: 500px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.task-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.task-form label {
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.task-form input,
+.task-form textarea,
+.task-form select {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+/* 🌟 Submit Button */
+.btn-submit {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+/* 🌟 Task List */
+.task-list {
+    margin-top: 20px;
+}
+
+.task-card {
+    background: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 5px solid #007bff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-card.completed {
+    border-left: 5px solid green;
+    text-decoration: line-through;
+}
+
+/* 🌟 Buttons */
+.btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-edit {
+    background-color: #ffc107;
+    color: black;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* 🌟 Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .container,
+.dark-mode .task-form-container {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.dark-mode .task-card {
+    background: #333;
+    color: white;
+}
+
+.dark-mode .btn-submit {
+    background-color: #007bff;
+}
+
+.dark-mode .btn-delete {
+    background-color: #dc3545;
+}
+
+.dark-mode nav {
+    background-color: #0056b3;
+}
+
+/* 🌟 Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .task-form-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .task-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .task-card button {
+        width: 100%;
+        margin-top: 5px;
+    }
+}
